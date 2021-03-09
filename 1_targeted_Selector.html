@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=\, initial-scale=1.0">
+   <title>Targeted Selector</title>
+</head>
+<style>
+ li > p {
+   background: #2222;
+ }
+
+ a[target="_self"] {
+ }
+ form input {
+    width: 100%;
+    margin-bottom: 0.5rem;
+ }
+
+ input[type="submit"] {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+ }
+</style>
+<body>
+   <div>
+      <ul>
+         <li>one</li>
+         <li>two</li>
+         <li><p>tree</p></li>
+         <li>four</li>
+      </ul>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, quaerat.</p>
+
+   </div>
+   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos at possimus, voluptates aliquam tempora perspiciatis animi expedita pariatur libero ipsam distinctio nam consequatur, accusamus eum corporis accusantium illo officia culpa.</p>
+   <a href="http//google.com" target="_self">Google</a>
+
+   <form>
+      <input type="name" name="name" id="name" placeholder="Enter your name">
+      <input type="email" name="email" id="email" placeholder="Enter your email">
+      <input type="submit" target="_self">
+   </form>
+</body>
+</html>

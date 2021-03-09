@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Animation</title>
+</head>
+<style>
+   body {
+      background: #444;
+   }
+   .box {
+      background-color: #f4f4f4;
+      width: 200px;
+      height: 200px;
+      position: relative;
+
+      /* animation-name: animate1;
+      animation-duration: 4s;
+      animation-delay: 0;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+      animation-direction: alternate-reverse;
+       */
+
+       animation: animate1 4s forwards 1s ease-in-out;
+   }
+
+   @keyframes animate1 {
+      from {
+         top: 0;
+      }
+      to {
+         width: 600px;
+         top: 400px;
+         background-color: #3fa4;
+      }
+   }
+
+</style>
+<body>
+   <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Transition Property</title>
+</head>
+
+<style>
+   body {
+      background: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+   }
+
+   .box {
+      background: black;
+      width: 50px;
+      height: 20px;
+      padding: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+      font-style: oblique;
+      transition-property: all;
+      transition-duration: 1s;
+      transition-delay: 0s;
+   }
+
+   .box:hover {
+      background: turquoise;
+      width: 70px;
+      height: 40px;
+
+   }
+</style>
+<body>
+   <button class="box" type="submit">Submit</button>
+</body>
+</html>
